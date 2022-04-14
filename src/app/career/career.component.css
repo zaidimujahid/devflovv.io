@@ -1,0 +1,17 @@
+span{
+  color: #0085FF;
+}
+.forget{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.slider-image{
+  width:1400px;
+  height:600px;
+}
+.ground{
+  background-image: url(/assets/image/Untitled-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

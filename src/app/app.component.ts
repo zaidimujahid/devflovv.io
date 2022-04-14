@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'devflovv';
+  myimage:string = "/src/image/Final logo.jpg";
+
 }
