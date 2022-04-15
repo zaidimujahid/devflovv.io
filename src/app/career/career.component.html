@@ -48,55 +48,103 @@
 
 
 
-    <!--this is clickshow section start  -->
+    <!--this is clickshow blocks section start  -->
 <div id="container">
   <div class="time">
 <div class="col1">
   <div class="container">
     <div class="products-container" >
     <div class="product " (click) = "toggleUxui()" data-name="p-1">
-  <img src="/assets/image/ux-design.png" class="center">
+  <img src="/assets/image/ui (2).png" class="center">
   <h6 class="design">UI/UX Design</h6>
 </div>
 <div class="product"  (click) = "toggleTesting()" data-name="p-2">
-  <img src="/assets/image/mobile-development.png" class="center">
+  <img src="/assets/image/app-testing (1).png" class="center">
   <h6 class="design">Software Testing Consulting</h6>
 </div>
 <div class="product" (click) = "toggleChain()" data-name="p-3">
-  <img src="/assets/image/blockchain.png" class="center">
+  <img src="/assets/image/block-chain (1).png" class="center">
   <h6 class="design">BlockChain Development</h6>
 </div>
 <div class="product" (click) = "toggleMobile()" data-name="p-4">
-  <img src="/assets/image/mobile-app.png" class="center">
+  <img src="/assets/image/mobile-app (3).png" class="center">
   <h6 class="design">Mobile App Development</h6>
 </div>
 <div class="product" (click) = "toggleWeb()" data-name="p-5">
-  <img src="/assets/image/web-designing.png" class="center">
+  <img src="/assets/image/web-designing (4).png" class="center">
   <h6 class="design">Web Design & development</h6>
 </div>
 <div class="product" (click)= "toggleLot()" data-name="p-6">
-  <img src="/assets/image/ab-testing-app-1555443 (2).png" class="center">
+  <img src="/assets/image/app-development.png" class="center">
   <h6 class="design">Lot App Development</h6>
 </div>
 </div>
 </div>
 </div>
+
+<!--this is clickshow blocks End-->
+
+
+<!--this is magic box start-->
 <div class="col2">
-  <p *ngIf = "!isUxui">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
-    <p *ngIf = "!isTesting">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
-      <p *ngIf = "!isChain">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
-        <p *ngIf = "!isMobile">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
-          <p *ngIf = "!isWeb">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
-            <p *ngIf = "!isLot">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
-
-
-
-
-
+  <div *ngIf = "!isUxui">
+    <h6>UI/UX Design</h6>
+    <p>Award-winning UI/UX consultation and development services to design software products that win the hearts of your customers.</p>
+    <img src="/assets/image/mobile-app.png" class="center2">
+    <img src="/assets/image/mobile-app.png" class="center2">
+    <img src="/assets/image/mobile-app.png" class="center2">
+    <img src="/assets/image/mobile-app.png" class="center2"><br>
+<button class="btn btn-primary">Learn More</button>
+  </div>
+    <div *ngIf = "!isTesting">
+      <h6>Software Testing Consulting</h6>
+    <p>In-depth software QA testing and consultation to develop bug-free software products and meet quality standards.</p>
+    <img src="/assets/image/mobile-app.png" class="center2">
+    <img src="/assets/image/mobile-app.png" class="center2">
+    <img src="/assets/image/mobile-app.png" class="center2">
+    <img src="/assets/image/mobile-app.png" class="center2"><br>
+<button class="btn btn-primary">Learn More</button>
+    </div>
+      <div *ngIf = "!isChain">
+        <h6>Blockchain Development</h6>
+        <p>Wide range of reliable and tailored blockchain software application development services at your disposal.</p>
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2"><br>
+    <button class="btn btn-primary">Learn More</button>
+        </div>
+        <div *ngIf = "!isMobile">
+          <h6>Mobile App Development</h6>
+          <p>Consultation on updating existing mobile applications and development of apps that look and perform great on both iOS and Android.</p>
+          <img src="/assets/image/mobile-app.png" class="center2">
+          <img src="/assets/image/mobile-app.png" class="center2">
+          <img src="/assets/image/mobile-app.png" class="center2">
+          <img src="/assets/image/mobile-app.png" class="center2"><br>
+      <button class="btn btn-primary">Learn More</button>
+        </div>
+          <div *ngIf = "!isWeb">
+            <h6>Web Design & Development</h6>
+            <p>Scalable web product development at any stage and ongoing support after launch.</p>
+            <img src="/assets/image/mobile-app.png" class="center2">
+            <img src="/assets/image/mobile-app.png" class="center2">
+            <img src="/assets/image/mobile-app.png" class="center2">
+            <img src="/assets/image/mobile-app.png" class="center2"><br>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+            <div *ngIf = "!isLot">
+              <h6>IoT App Development</h6>
+              <p>Proficient IoT app developers to build world-class, scalable, and future-ready IoT applications</p>
+              <img src="/assets/image/mobile-app.png" class="center2">
+              <img src="/assets/image/mobile-app.png" class="center2">
+              <img src="/assets/image/mobile-app.png" class="center2">
+              <img src="/assets/image/mobile-app.png" class="center2"><br>
+          <button class="btn btn-primary">Learn More</button>
+            </div>
   </div>
 </div>
 </div>
-    <!--this is clickshow section End  -->
+    <!--this is magic box End  -->
     <div class="container">
       <h1>type</h1>
     </div>
