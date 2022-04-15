@@ -2,16 +2,78 @@ span{
   color: #0085FF;
 }
 .forget{
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
   text-align: center;
 }
 .slider-image{
   width:1400px;
   height:600px;
 }
-.ground{
+
+.time{
+
   background-image: url(/assets/image/Untitled-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#container{
+  width:84.25rem;
+  margin: 0 auto;
+  height:25rem;
+  background-image: url('/assets/image/aaaa.png');
+}
+.col1{
+  width:500px;
+  margin-top: 3rem;
+  float:left;
+  margin-right: 2.75rem;
+  margin-left: 6rem;
+}
+
+.col2{
+  width:650px;
+  float:left;
+  margin-top: 3rem;
+  padding-left: 1rem;
+}
+.products-container{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition:all 2s linear;
+}
+.container{
+  max-width: 800px;
+  padding: 2rm 1rm;
+}
+.container .products-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem,1fr));
+  gap:1rem;
+}
+.center{
+  padding:1rem;
+  margin-left: 2.50rem;
+  margin-top: 1rem;
+}
+.container .products-container .product{
+background-color: #f2f9f9;
+box-shadow: 0.5rem,1rem;
+padding: 3rem,2rem;
+border-radius: .75rem;
+}
+.container .products-container .product:hover {
+  background-color:#3b4c61;
+  color: #f2f9f9;
+  transform: scale(.9);
+}
+.design{
+  text-align: center;
+  margin-bottom: 1.75rem;
+
 }

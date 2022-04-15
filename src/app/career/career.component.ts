@@ -6,7 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./career.component.css']
 })
 export class CareerComponent implements OnInit {
+  isUxui = false;
+  toggleUxui(){
+    this.isUxui = !this.isUxui;
+  }
 
+  isTesting = false;
+  toggleTesting(){
+    this.isTesting = !this.isTesting;
+  }
+
+  isChain = false;
+  toggleChain(){
+    this.isChain = !this.isChain;
+  }
+  isMobile = false;
+  toggleMobile(){
+    this.isMobile = !this.isMobile;
+  }
+  isWeb = false;
+  toggleWeb(){
+    this.isWeb = !this.isWeb;
+  }
+  isLot = false;
+  toggleLot(){
+    this.isLot = !this.isLot;
+  }
   constructor() { }
 
   ngOnInit(): void {

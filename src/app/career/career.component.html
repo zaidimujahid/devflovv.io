@@ -1,22 +1,25 @@
+       <!--banner image buttons point  -->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+
+      <!--banner image slider point start  -->
     <div class="init">
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="width: 100%;">
       <div class="carousel-item active">
-        <img src="/assets/image/banner-01.jpg" width="1350px" height="600">
+        <img src="/assets/image/banner-01.jpg" width="100%" height="100%">
       </div>
       <div class="carousel-item">
-        <img src="/assets/image/b-02.jpg" width="1350px" height="600">
+        <img src="/assets/image/b-02.jpg" width="100%" height="100%">
       </div>
       <div class="carousel-item">
-        <img src="/assets/image/b-03.jpg" width="1350px" height="600">
+        <img src="/assets/image/b-03.jpg" width="100%" height="100%">
       </div>
       <div class="carousel-item">
-        <img src="/assets/image/b-2-01-01-01.jpg" width="1350px" height="600">
+        <img src="/assets/image/b-2-01-01-01.jpg" width="100%" height="100%">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -29,19 +32,71 @@
     </button>
   </div>
 </div>
+  <!--banner image buttons point End -->
+
+
+
+    <!--this is section one content start  -->
 <div class="forget">
   <h3>Software <span>Consulting &<br>
     Development Services...</span></h3>
     <p>...with the perfect blend of technology, expertise and innovation.</p>
 </div>
+    <!--this is section one content End  -->
+
+
+
+
+
+    <!--this is clickshow section start  -->
 <div id="container">
-  <div class="ground">
+  <div class="time">
 <div class="col1">
-  <h1>image</h1>
-  <p>hover</p>
+  <div class="container">
+    <div class="products-container" >
+    <div class="product " (click) = "toggleUxui()" data-name="p-1">
+  <img src="/assets/image/ux-design.png" class="center">
+  <h6 class="design">UI/UX Design</h6>
+</div>
+<div class="product"  (click) = "toggleTesting()" data-name="p-2">
+  <img src="/assets/image/mobile-development.png" class="center">
+  <h6 class="design">Software Testing Consulting</h6>
+</div>
+<div class="product" (click) = "toggleChain()" data-name="p-3">
+  <img src="/assets/image/blockchain.png" class="center">
+  <h6 class="design">BlockChain Development</h6>
+</div>
+<div class="product" (click) = "toggleMobile()" data-name="p-4">
+  <img src="/assets/image/mobile-app.png" class="center">
+  <h6 class="design">Mobile App Development</h6>
+</div>
+<div class="product" (click) = "toggleWeb()" data-name="p-5">
+  <img src="/assets/image/web-designing.png" class="center">
+  <h6 class="design">Web Design & development</h6>
+</div>
+<div class="product" (click)= "toggleLot()" data-name="p-6">
+  <img src="/assets/image/ab-testing-app-1555443 (2).png" class="center">
+  <h6 class="design">Lot App Development</h6>
+</div>
+</div>
+</div>
 </div>
 <div class="col2">
-  <h1>show</h1>
+  <p *ngIf = "!isUxui">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
+    <p *ngIf = "!isTesting">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
+      <p *ngIf = "!isChain">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
+        <p *ngIf = "!isMobile">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
+          <p *ngIf = "!isWeb">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
+            <p *ngIf = "!isLot">An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.
+
+
+
+
+
+  </div>
 </div>
 </div>
-</div>
+    <!--this is clickshow section End  -->
+    <div class="container">
+      <h1>type</h1>
+    </div>
