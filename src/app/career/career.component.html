@@ -1,13 +1,16 @@
-       <!--banner image buttons point  -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+<!--banner image buttons point  -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
 
-      <!--banner image slider point start  -->
-    <div class="init">
+  <!--banner image slider point start  -->
+  <div class="init">
     <div class="carousel-inner" style="width: 100%;">
       <div class="carousel-item active">
         <img src="/assets/image/banner-01.jpg" width="100%" height="100%">
@@ -22,129 +25,135 @@
         <img src="/assets/image/b-2-01-01-01.jpg" width="100%" height="100%">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 </div>
-  <!--banner image buttons point End -->
+<!--banner image buttons point End -->
 
 
 
-    <!--this is section one content start  -->
+<!--this is section one content start  -->
 <div class="forget">
   <h3>Software <span>Consulting &<br>
-    Development Services...</span></h3>
-    <p>...with the perfect blend of technology, expertise and innovation.</p>
+      Development Services...</span></h3>
+  <p>...with the perfect blend of technology, expertise and innovation.</p>
 </div>
-    <!--this is section one content End  -->
+<!--this is section one content End  -->
 
 
 
 
 
-    <!--this is clickshow blocks section start  -->
+<!--this is clickshow blocks section start  -->
 <div id="container">
   <div class="time">
-<div class="col1">
-  <div class="container">
-    <div class="products-container" >
-    <div class="product " (click) = "toggleUxui()" data-name="p-1">
-  <img src="/assets/image/ui (2).png" class="center">
-  <h6 class="design">UI/UX Design</h6>
-</div>
-<div class="product"  (click) = "toggleTesting()" data-name="p-2">
-  <img src="/assets/image/app-testing (1).png" class="center">
-  <h6 class="design">Software Testing Consulting</h6>
-</div>
-<div class="product" (click) = "toggleChain()" data-name="p-3">
-  <img src="/assets/image/block-chain (1).png" class="center">
-  <h6 class="design">BlockChain Development</h6>
-</div>
-<div class="product" (click) = "toggleMobile()" data-name="p-4">
-  <img src="/assets/image/mobile-app (3).png" class="center">
-  <h6 class="design">Mobile App Development</h6>
-</div>
-<div class="product" (click) = "toggleWeb()" data-name="p-5">
-  <img src="/assets/image/web-designing (4).png" class="center">
-  <h6 class="design">Web Design & development</h6>
-</div>
-<div class="product" (click)= "toggleLot()" data-name="p-6">
-  <img src="/assets/image/app-development.png" class="center">
-  <h6 class="design">Lot App Development</h6>
-</div>
-</div>
-</div>
-</div>
-
-<!--this is clickshow blocks End-->
-
-
-<!--this is magic box start-->
-<div class="col2">
-  <div *ngIf = "!isUxui">
-    <h6>UI/UX Design</h6>
-    <p>Award-winning UI/UX consultation and development services to design software products that win the hearts of your customers.</p>
-    <img src="/assets/image/mobile-app.png" class="center2">
-    <img src="/assets/image/mobile-app.png" class="center2">
-    <img src="/assets/image/mobile-app.png" class="center2">
-    <img src="/assets/image/mobile-app.png" class="center2"><br>
-<button class="btn btn-primary">Learn More</button>
-  </div>
-    <div *ngIf = "!isTesting">
-      <h6>Software Testing Consulting</h6>
-    <p>In-depth software QA testing and consultation to develop bug-free software products and meet quality standards.</p>
-    <img src="/assets/image/mobile-app.png" class="center2">
-    <img src="/assets/image/mobile-app.png" class="center2">
-    <img src="/assets/image/mobile-app.png" class="center2">
-    <img src="/assets/image/mobile-app.png" class="center2"><br>
-<button class="btn btn-primary">Learn More</button>
+    <div class="col1">
+      <div class="container">
+        <div class="products-container">
+          <div class="product pointer-cursor" (click)="toggleCard('UIUX')" data-name="p-1">
+            <img src="/assets/image/ui (2).png" class="center">
+            <h6 class="design">UI/UX Design</h6>
+          </div>
+          <div class="product pointer-cursor" (click)="toggleCard('testing')" data-name="p-2">
+            <img src="/assets/image/app-testing (1).png" class="center">
+            <h6 class="design">Software Testing Consulting</h6>
+          </div>
+          <div class="product pointer-cursor" (click)="toggleCard('blockchain')" data-name="p-3">
+            <img src="/assets/image/block-chain (1).png" class="center">
+            <h6 class="design">BlockChain Development</h6>
+          </div>
+          <div class="product pointer-cursor" (click)="toggleCard('mobile')" data-name="p-4">
+            <img src="/assets/image/mobile-app (3).png" class="center">
+            <h6 class="design">Mobile App Development</h6>
+          </div>
+          <div class="product pointer-cursor" (click)="toggleCard('web')" data-name="p-5">
+            <img src="/assets/image/web-designing (4).png" class="center">
+            <h6 class="design">Web Design & development</h6>
+          </div>
+          <div class="product pointer-cursor" (click)="toggleCard('IoT')" data-name="p-6">
+            <img src="/assets/image/app-development.png" class="center">
+            <h6 class="design">Lot App Development</h6>
+          </div>
+        </div>
+      </div>
     </div>
-      <div *ngIf = "!isChain">
-        <h6>Blockchain Development</h6>
-        <p>Wide range of reliable and tailored blockchain software application development services at your disposal.</p>
+
+    <!--this is clickshow blocks End-->
+
+
+    <!--this is magic box start-->
+    <div class="col2">
+      <div *ngIf="isUxui">
+        <h6>UI/UX Design</h6>
+        <p>Award-winning UI/UX consultation and development services to design software products that win the hearts of
+          your customers.</p>
         <img src="/assets/image/mobile-app.png" class="center2">
         <img src="/assets/image/mobile-app.png" class="center2">
         <img src="/assets/image/mobile-app.png" class="center2">
         <img src="/assets/image/mobile-app.png" class="center2"><br>
-    <button class="btn btn-primary">Learn More</button>
-        </div>
-        <div *ngIf = "!isMobile">
-          <h6>Mobile App Development</h6>
-          <p>Consultation on updating existing mobile applications and development of apps that look and perform great on both iOS and Android.</p>
-          <img src="/assets/image/mobile-app.png" class="center2">
-          <img src="/assets/image/mobile-app.png" class="center2">
-          <img src="/assets/image/mobile-app.png" class="center2">
-          <img src="/assets/image/mobile-app.png" class="center2"><br>
-      <button class="btn btn-primary">Learn More</button>
-        </div>
-          <div *ngIf = "!isWeb">
-            <h6>Web Design & Development</h6>
-            <p>Scalable web product development at any stage and ongoing support after launch.</p>
-            <img src="/assets/image/mobile-app.png" class="center2">
-            <img src="/assets/image/mobile-app.png" class="center2">
-            <img src="/assets/image/mobile-app.png" class="center2">
-            <img src="/assets/image/mobile-app.png" class="center2"><br>
         <button class="btn btn-primary">Learn More</button>
       </div>
-            <div *ngIf = "!isLot">
-              <h6>IoT App Development</h6>
-              <p>Proficient IoT app developers to build world-class, scalable, and future-ready IoT applications</p>
-              <img src="/assets/image/mobile-app.png" class="center2">
-              <img src="/assets/image/mobile-app.png" class="center2">
-              <img src="/assets/image/mobile-app.png" class="center2">
-              <img src="/assets/image/mobile-app.png" class="center2"><br>
-          <button class="btn btn-primary">Learn More</button>
-            </div>
+      <div *ngIf="isTesting">
+        <h6>Software Testing Consulting</h6>
+        <p>In-depth software QA testing and consultation to develop bug-free software products and meet quality
+          standards.</p>
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2"><br>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+      <div *ngIf="isChain">
+        <h6>Blockchain Development</h6>
+        <p>Wide range of reliable and tailored blockchain software application development services at your disposal.
+        </p>
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2"><br>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+      <div *ngIf="isMobile">
+        <h6>Mobile App Development</h6>
+        <p>Consultation on updating existing mobile applications and development of apps that look and perform great on
+          both iOS and Android.</p>
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2"><br>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+      <div *ngIf="isWeb">
+        <h6>Web Design & Development</h6>
+        <p>Scalable web product development at any stage and ongoing support after launch.</p>
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2"><br>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+      <div *ngIf="isIot">
+        <h6>IoT App Development</h6>
+        <p>Proficient IoT app developers to build world-class, scalable, and future-ready IoT applications</p>
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2">
+        <img src="/assets/image/mobile-app.png" class="center2"><br>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+    </div>
   </div>
 </div>
+<!--this is magic box End  -->
+<div class="container">
+  <h1>type</h1>
 </div>
-    <!--this is magic box End  -->
-    <div class="container">
-      <h1>type</h1>
-    </div>
