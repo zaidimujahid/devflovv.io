@@ -80,5 +80,59 @@ border-radius: .75rem;
 .design{
   text-align: center;
   margin-bottom: 1.75rem;
+}
+.h3-2{
+text-align: center;
+margin-top: 4.5rem;
+}
+.carousel-imagetext{
+  list-style: none;
+  display:flex;
+  margin-left: 21rem;
+}
+li{
+  padding: 1rem;
+}
+li:hover{
+  color:#0273fd;
+}
+a{
+  color:#3b4c61;
+}
+hr.solid {
+  color:#0000CD;
+  border: 1px solid;
+  width:95%;
+  margin-left: 2rem;
+}
+.carousel-text{
+  text-align: center;
+}
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+}
+
+.db {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+  display: table-cell; /* Make elements inside the container behave like table cells */
 }

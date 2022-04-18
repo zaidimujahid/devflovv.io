@@ -7,6 +7,7 @@ import { ServiceComponent } from './service/service.component';
 import { WorkComponent } from './work/work.component';
 import { CareerComponent } from './career/career.component';
 import { HeaderComponent } from './header/header.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 @NgModule({
@@ -16,10 +17,12 @@ import { HeaderComponent } from './header/header.component';
     ServiceComponent,
     WorkComponent,
     CareerComponent,
-    HeaderComponent
+    HeaderComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
+
 
   ],
   providers: [],
