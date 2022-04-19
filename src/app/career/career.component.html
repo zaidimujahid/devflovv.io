@@ -60,8 +60,8 @@
       <div class="container">
         <div class="products-container">
           <div class="product pointer-cursor" (click)="toggleCard('UIUX')" data-name="p-1">
-            <img src="/assets/image/ui (2).png" class="center">
-            <h6 class="design">UI/UX Design</h6>
+            <img src="/assets/image/ux-design (1).png" class="center"  id="designer">
+            <h6 class="design" id="designs">UI/UX Design</h6>
           </div>
           <div class="product pointer-cursor" (click)="toggleCard('testing')" data-name="p-2">
             <img src="/assets/image/app-testing (1).png" class="center">
@@ -88,6 +88,9 @@
     </div>
 
     <!--this is clickshow blocks End-->
+
+
+
 
 
     <!--this is magic box start-->
@@ -161,20 +164,69 @@
 
   </ul>
 </div>
+
 <!--this is Dividers stat-->
 <hr class="solid">
 <!--this is Dividers End-->
+
+
+<!--this is grid slider  section start-->
+
+<div class="partners">
+  <div class="container-s">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <img src="/assets/image/8-01-01.png" class="timg">
+      </ng-template>
+      <ng-template carouselSlide>
+        <img src="/assets/image/9-01-01.png" class="timg">
+      </ng-template>
+      <div class="box-1">
+      <ng-template carouselSlide>
+        <img src="/assets/image/Ecommerce-web-page-amico.png" class="timg">
+      </ng-template>
+      </div>
+      <ng-template carouselSlide><img src="/assets/image/Ecommerce-web-page-amico.png"  class="timg">
+      </ng-template>
+    </owl-carousel-o>
+
+</div>
+<!--this is grid slider  section end-->
+
+<!--this is grid slider text section start-->
 <div class="container">
-  <div class="products-container">
-<div class="card">
-    <img src="/assets/image/Ecommerce-web-page-amico.png" alt="John" >
+  <div class="col-xs-6">
+    <p class="paragraph">Our team of expert software consultants and engineers will analyze your current situation and develop an eCommerce platform that meets all of your needs. We will work with you using the right tools to build an online store that captures more sales and helps you grow faster than ever before.</p>
   </div>
-  <div class="card">
-    <img src="/assets/image/Ecommerce-web-page-amico.png" alt="John"  >
-  </div>
-<div class="card">
-  <img src="/assets/image/Ecommerce-web-page-amico.png" alt="John"  >
 </div>
-</div>
-</div>
-<h1>helo</h1>
+<!--this is grid slider text section end-->
+
+
+
+<!--this is2nd banner slider section start-->
+
+<owl-carousel-o [options]="bannerSlider">
+  <ng-template carouselSlide>
+    <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+  </ng-template>
+  <ng-template carouselSlide>
+    <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+  </ng-template>
+  <ng-template carouselSlide>
+    <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+  </ng-template>
+</owl-carousel-o>
+<!--this is 2nd banner slider section end-->
+
+
+
+<!--this is 2nd banner section start-->
+<img src="/assets/image/Untitled-1-01.jpg" class="banner-5" width="100%">
+<!--this is 2nd banner end-->
+
+
+
+
+<!--this is text with image start-->
+<!--this is text with image End-->
+<h1>hy</h1>

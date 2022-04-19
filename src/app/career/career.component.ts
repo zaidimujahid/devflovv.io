@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
 @Component({
   selector: 'app-career',
   templateUrl: './career.component.html',
@@ -57,7 +59,59 @@ export class CareerComponent implements OnInit {
         (this.isWeb = false);
     }
   }
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
+  bannerSlider: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 500,
+    navText: ['<i class="fa fa-caret-left" </i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: false
+  }
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 500,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items:3
+      }
+    },
+    nav: false
+  }
 }
+
