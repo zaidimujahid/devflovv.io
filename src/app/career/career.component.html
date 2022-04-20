@@ -42,7 +42,7 @@
 
 
 <!--this is section one content start  -->
-<div class="forget">
+<div class="text-center my-5">
   <h3 class="h3-1">Software <span>Consulting &<br>
       Development Services...</span></h3>
   <p>...with the perfect blend of technology, expertise and innovation.</p>
@@ -55,46 +55,73 @@
 
 <!--this is clickshow blocks section start  -->
 <div id="container">
-  <div class="time">
-    <div class="col1">
-      <div class="container">
-        <div class="products-container">
-          <div class="product pointer-cursor" (click)="toggleCard('UIUX')" data-name="p-1">
-            <img src="/assets/image/ux-design (1).png" class="center"  id="designer">
-            <h6 class="design" id="designs">UI/UX Design</h6>
+  <div class="d-flex justify-content-around flex-wrap" style="width: 100%">
+    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center p-0" style="height: 33rem;">
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-wrap mb-3">
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2 "
+            (click)="toggleCard('UIUX')" data-name="p-1">
+            <div class="text-center mb-3">
+              <img src="/assets/image/ux-design (1).png" style="width: 40px;">
+            </div>
+            <div class="text-center">
+              <h6>UI/UX Design</h6>
+            </div>
           </div>
-          <div class="product pointer-cursor" (click)="toggleCard('testing')" data-name="p-2">
-            <img src="/assets/image/app-testing (1).png" class="center">
-            <h6 class="design">Software Testing Consulting</h6>
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          (click)="toggleCard('testing')"data-name="p-1">
+            <div class="text-center mb-3">
+              <img src="/assets/image/app-testing (1).png" style="width: 40px;">
+            </div>
+
+            <div class="text-center" >
+              <h6>Software Test <br>Consulting</h6>
+            </div>
           </div>
-          <div class="product pointer-cursor" (click)="toggleCard('blockchain')" data-name="p-3">
-            <img src="/assets/image/block-chain (1).png" class="center">
-            <h6 class="design">BlockChain Development</h6>
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          (click)="toggleCard('blockchain')" data-name="p-1">
+            <div class="text-center mb-3">
+              <img src="/assets/image/block-chain (1).png" style="width: 40px;">
+            </div>
+            <div class="text-center">
+              <h6>BlockChain<br> Development</h6>
+            </div>
           </div>
-          <div class="product pointer-cursor" (click)="toggleCard('mobile')" data-name="p-4">
-            <img src="/assets/image/mobile-app (3).png" class="center">
-            <h6 class="design">Mobile App Development</h6>
+        </div>
+        <div class="d-flex mb-2">
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          (click)="toggleCard('mobile')" data-name="p-1">
+            <div class="text-center mb-3">
+              <img src="/assets/image/mobile-app (3).png" style="width: 40px;">
+            </div>
+            <div class="text-center">
+              <h6>Mobile App <br>Development</h6>
+            </div>
           </div>
-          <div class="product pointer-cursor" (click)="toggleCard('web')" data-name="p-5">
-            <img src="/assets/image/web-designing (4).png" class="center">
-            <h6 class="design">Web Design & development</h6>
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          (click)="toggleCard('web')" data-name="p-1">
+            <div class="text-center mb-3">
+              <img src="/assets/image/web-designing (4).png" style="width: 40px;">
+            </div>
+            <div class="text-center">
+              <h6>Web Design & <br>development</h6>
+            </div>
           </div>
-          <div class="product pointer-cursor" (click)="toggleCard('IoT')" data-name="p-6">
-            <img src="/assets/image/app-development.png" class="center">
-            <h6 class="design">Iot App Development</h6>
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          (click)="toggleCard('IoT')" data-name="p-1">
+            <div class="text-center mb-3">
+              <img src="/assets/image/app-development.png" style="width: 40px;">
+            </div>
+            <div class="text-center">
+              <h6>Iot App <br>Developmen</h6>
+            </div>
           </div>
         </div>
       </div>
+
+
     </div>
-
-    <!--this is clickshow blocks End-->
-
-
-
-
-
-    <!--this is magic box start-->
-    <div class="col2">
+    <div class="d-flex col-md-6 col-12" style="margin-top: 6em;">
       <div *ngIf="isUxui">
         <h6>UI/UX Design</h6>
         <p>Award-winning UI/UX consultation and development services to design software products that win the hearts of
@@ -103,7 +130,7 @@
         <img src="/assets/image/adobe-premiere-pro.png" class="center2">
         <img src="/assets/image/figma (1).png" class="center2">
         <img src="/assets/image/adobe-photoshop.png" class="center2"><br>
-        <button class="btn btn-primary">Learn More</button>
+        <button class="btn btn-dark">Learn More</button>
       </div>
       <div *ngIf="isTesting">
         <h6>Software Testing Consulting</h6>
@@ -112,7 +139,7 @@
         <img src="/assets/image/postman.png" class="center2">
         <img src="/assets/image/jira.png" class="center2">
         <br>
-        <button class="btn btn-primary">Learn More</button>
+        <button class="btn btn-dark">Learn More</button>
       </div>
       <div *ngIf="isChain">
         <h6>Blockchain Development</h6>
@@ -121,7 +148,7 @@
         <img src="/assets/image/ethereum.png" class="center2">
         <img src="/assets/image/mobile-app.png" class="center2">
         <img src="/assets/image/mobile-app.png" class="center2"><br>
-        <button class="btn btn-primary">Learn More</button>
+        <button class="btn btn-dark">Learn More</button>
       </div>
       <div *ngIf="isMobile">
         <h6>Mobile App Development</h6>
@@ -131,7 +158,7 @@
         <img src="/assets/image/swift.png" class="center2">
         <img src="/assets/image/kotlin.png" class="center2">
         <img src="/assets/image/mobile-app.png" class="center2"><br>
-        <button class="btn btn-primary">Learn More</button>
+        <button class="btn btn-dark">Learn More</button>
       </div>
       <div *ngIf="isWeb">
         <h6>Web Design & Development</h6>
@@ -139,7 +166,7 @@
         <img src="/assets/image/mongodb.png" class="center2">
         <img src="/assets/image/magento.png" class="center2">
         <img src="/assets/image/node-js.png" class="center2"><br>
-        <button class="btn btn-primary">Learn More</button>
+        <button class="btn btn-dark">Learn More</button>
       </div>
       <div *ngIf="isIot">
         <h6>IoT App Development</h6>
@@ -147,8 +174,8 @@
         <img src="/assets/image/arduino.png" class="center2">
         <img src="/assets/image/openshift.png" class="center2">
         <img src="/assets/image/vessel.png" class="center2">
-       <br>
-        <button class="btn btn-primary">Learn More</button>
+        <br>
+        <button class="btn btn-dark">Learn More</button>
       </div>
     </div>
   </div>
@@ -156,7 +183,7 @@
 <!--this is magic box End  -->
 <div class="container-two">
   <h3 class="h3-2"><span>Industries</span> in Focus</h3>
-  <ul class="carousel-imagetext">
+  <ul class="carousel-imagetext ">
     <li><a>E-Commerce</a></li>
     <li><a>Fintech</a></li>
     <li><a>Travel & Tourim</a></li>
@@ -181,52 +208,148 @@
       <ng-template carouselSlide>
         <img src="/assets/image/9-01-01.png" class="timg">
       </ng-template>
-      <div class="box-1">
+        <ng-template carouselSlide>
+          <img src="/assets/image/Ecommerce-web-page-amico.png" class="timg">
+        </ng-template>
       <ng-template carouselSlide>
-        <img src="/assets/image/Ecommerce-web-page-amico.png" class="timg">
-      </ng-template>
-      </div>
-      <ng-template carouselSlide><img src="/assets/image/Ecommerce-web-page-amico.png"  class="timg">
+        <img src="/assets/image/adobe-illustrator.png" class="timg">
       </ng-template>
     </owl-carousel-o>
 
-</div>
-<!--this is grid slider  section end-->
 
-<!--this is grid slider text section start-->
-<div class="container">
-  <div class="col-xs-6">
-    <p class="paragraph">Our team of expert software consultants and engineers will analyze your current situation and develop an eCommerce platform that meets all of your needs. We will work with you using the right tools to build an online store that captures more sales and helps you grow faster than ever before.</p>
+</div>
+  </div>
+  <!--this is grid slider  section end-->
+
+  <!--this is grid slider text section start-->
+  <div class="container">
+    <div class="col-xs-6">
+      <p class="paragraph my-5">Our team of expert software consultants and engineers will analyze your current situation and
+        develop an eCommerce platform that meets all of your needs. We will work with you using the right tools to build
+        an online store that captures more sales and helps you grow faster than ever before.</p>
+    </div>
+  </div>
+  <!--this is grid slider text section end-->
+
+
+
+  <!--this is2nd banner slider section start-->
+
+  <owl-carousel-o [options]="bannerSlider">
+    <ng-template carouselSlide>
+      <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+    </ng-template>
+    <ng-template carouselSlide>
+      <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+    </ng-template>
+    <ng-template carouselSlide>
+      <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+    </ng-template>
+  </owl-carousel-o>
+  <!--this is 2nd banner slider section end-->
+
+  <!--this is text with image start-->
+  <div class="container-fluid" height="33rem">
+    <div class=" model d-flex my-5 justify-content-around flex-wrap">
+      <div class="line p-5">
+    <div class=" model-3 d-flex my-5 justify-content-around flex-wrap">
+      <div>
+      <img src="/assets/image/product-manager-dev.png" class="3-im mr-3">
+      </div>
+      <div>
+        <h4><span>Dedicated</span> Development Team</h4>
+        <p>Our staff augmentation model is intended to help companies find the right skills for their projed.</p>
+      </div>
+</div>
+<div class=" model-4 d-flex my-5 justify-content-around flex-wrap">
+  <div>
+  <img src="/assets/image/office-colleagues (1).png"class="3-im mr-3" >
+  </div>
+  <div>
+    <h4><span>Staff/Resource</span> Augmentation</h4>
+    <p>Our staff augmentation model is intended to help companies find the right skills for their project.</p>
   </div>
 </div>
-<!--this is grid slider text section end-->
+<div class=" model-4 d-flex my-5 justify-content-around flex-wrap">
+  <div>
+  <img src="/assets/image/business-crew (1).png" class="3-im mr-3">
+  </div>
+  <div>
+    <h4><span>Product</span> Development</h4>
+    <p>Our staff augmentation model is intended to help companies find the right skills for their project.</p>
+  </div>
+</div>
+     </div>
+    <div class="model-2 d-flex col-md-4 col-12">
+      <div  class="line-2 my-1">
+        <h3><span>Engagement</span> Models</h3>
+        <p>We solve your biggest business pains and help you succeed.
+          Here is how we can work together</p>
+          <img src="/assets/image/Ecommerce-web-page-amico.png" width="400px">
+      </div>
+    </div>
+  </div>
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col text-center">
+  <button class="btn btn-dark">View Pricing</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--this is text with image End-->
+
+  <!--this is 2nd banner section start-->
+  <img src="/assets/image/Untitled-1-01.jpg" class="banner-5" width="100%">
+  <!--this is 2nd banner end-->
+<div class="graphcontent text-center mt-5 mb-5">
+<h3>Let Us Know What You’re Looking for,<br>
+ <span>We’ll Build it for You</span></h3>
+</div>
+  <!--this is formsection start-->
+  <div class="container-fluid">
+    <div class=" form-out d-flex justify-content-around flex-wrap">
+      <div>
+        <h4>Talk to our Sales Team</h4>
+        <div class=" model-3 d-flex my-5 justify-content-around flex-wrap">
+          <div>
+          <img src="/assets/image/swift.png" >
+          </div>
+          <div>
+            <h5>Name</h5>
+            <p>Head of sale</p>
+            <img src="/assets/image/whatsapp (1).png" class="social pr-2">
+            <img src="/assets/image/twitter.png" class="social pr-2">
+            <img src="/assets/image/facebook-logo-2019.png" class="social pr-2">
+            <img src="/assets/image/instagram.png" class="social pr-2"><br>
+          </div>
+        </div>
+        <div class="client-count-wrp mt-100 ">
+
+        <div clas="cards">
+          <h5>{{projectcount}}</h5>
+          <p>agnecy</p>
+        </div>
+        <div clas="cards">
+          <h5>{{pound}}</h5>
+          <p>agnecy</p>
+        </div>
+        <div clas="cards">
+          <h5>{{projectcounts}}</h5>
+          <p>agnecy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-in d-flex col-md-5 col-12">
+      <div>
+        <h1>content image</h1>
 
 
-
-<!--this is2nd banner slider section start-->
-
-<owl-carousel-o [options]="bannerSlider">
-  <ng-template carouselSlide>
-    <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
-  </ng-template>
-  <ng-template carouselSlide>
-    <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
-  </ng-template>
-  <ng-template carouselSlide>
-    <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
-  </ng-template>
-</owl-carousel-o>
-<!--this is 2nd banner slider section end-->
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--this is formsection end-->
 
 
-
-<!--this is 2nd banner section start-->
-<img src="/assets/image/Untitled-1-01.jpg" class="banner-5" width="100%">
-<!--this is 2nd banner end-->
-
-
-
-
-<!--this is text with image start-->
-<!--this is text with image End-->
-<h1>hy</h1>

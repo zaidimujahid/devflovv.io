@@ -1,28 +1,16 @@
 span{
   color: #0085FF;
 }
-.forget{
-  margin-top: 4.5rem;
-  margin-bottom: 4.5rem;
-  text-align: center;
-}
 .slider-image{
   width:1400px;
   height:600px;
 }
 
-.time{
-
-  background-image: url(/assets/image/Untitled-1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #container{
   width:100%;
   margin: 0 auto;
-  height:33rem;
-  background-image: url('/assets/image/10-01-01.png');
+  height: 33rem;
+  background: url(/assets/image/0-01.png);
 }
 .h3-1{
   font-weight: bold;
@@ -74,17 +62,6 @@ span{
 .center2{
   padding:1rem;
 }
-.container .products-container .product{
-background-color: #f2f9f9;
-box-shadow: 0.5rem,1rem;
-padding: 3rem,2rem;
-border-radius: .75rem;
-}
-.container .products-container .product:hover {
-  background-color:#3b4c61;
-  color: #f2f9f9;
-  transform: scale(.9);
-}
 .design{
   text-align: center;
   margin-bottom: 1.75rem;
@@ -103,7 +80,7 @@ margin-top: 4.5rem;
 .carousel-imagetext{
   list-style: none;
   display:flex;
-  margin-left: 21rem;
+  justify-content: center;
 }
 li{
   padding: 1rem;
@@ -180,7 +157,6 @@ hr.solid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 280px;
   height:20rem;
-  margin-bottom: 5rem;
   background-color: #16202C;
   border-radius: .75rem;
 }
@@ -189,7 +165,7 @@ hr.solid {
 
 }
 .partners{
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .partners .timg {
 transition: all .3s ease;
@@ -207,4 +183,21 @@ height:
     33rem;
     margin-bottom: rem;
   }
+.h5-mode{
+  padding-left: 55px;
+  padding-top: 60px;
+}
+.ps-mode{
+  padding-left: 110px;
+  margin-top: -30px;
+}
+.h6-mode{
+  padding-left: 110px;
+  padding-top: 60px;
+
+}
+.p-mode{
+  padding-left: 55px;
+  margin-top: -30px;
+}
 

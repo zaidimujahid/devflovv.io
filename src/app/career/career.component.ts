@@ -72,7 +72,7 @@ export class CareerComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 500,
-    navText: ['<i class="fa fa-caret-left" </i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
+    navText: ['', ''],
     responsive: {
       0: {
         items: 1
@@ -96,7 +96,6 @@ export class CareerComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 500,
-    navText: ['', ''],
     responsive: {
       0: {
         items: 1
@@ -111,7 +110,36 @@ export class CareerComponent implements OnInit {
         items:3
       }
     },
-    nav: false
+    nav: true,
+    navText: ['<i class="fa fa-caret-left"</i>', '<i class="fa fa-caret-right"</i>'],
+
   }
+projectcount:number = 0;
+
+projectcountStop:any = setInterval(()=>{
+  this.projectcount++;
+  if(this .projectcount ==287)
+  {
+    clearInterval(this.projectcountStop)
+  }
+},10)
+
+pound:number = 0;
+poundStop:any = setInterval(()=>{
+  this.pound++;
+  if(this .pound ==287)
+  {
+    clearInterval(this.poundStop)
+  }
+},10)
+
+projectcounts:number = 0;
+projectcountsStop:any = setInterval(()=>{
+  this.projectcounts++;
+  if(this .projectcounts ==287)
+  {
+    clearInterval(this.projectcountsStop)
+  }
+},10)
 }
 

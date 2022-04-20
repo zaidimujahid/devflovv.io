@@ -8,6 +8,25 @@ body
   box-sizing: border-box;
 }
 
+.product {
+  background-color: #f2f9f9;
+  box-shadow: 0.5rem,1rem;
+  border-radius: .75rem;
+  padding: 2em;
+}
+.product:hover{
+  background-color: #3b4c61;
+  color: #f2f9f9;
+  transform: scale(.9);
+}
+
 .pointer-cursor {
   cursor: pointer;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+background-color: rgb(0, 0, 0);
+width: 10px;
+height: 10px;
+border-radius: 50px;
 }
