@@ -13,11 +13,14 @@ body
   box-shadow: 0.5rem,1rem;
   border-radius: .75rem;
   padding: 2em;
+  max-width: 155px;
+  aspect-ratio: 1;
 }
 .product:hover{
   background-color: #3b4c61;
   color: #f2f9f9;
   transform: scale(.9);
+
 }
 
 .pointer-cursor {

@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     WorkComponent,
     CareerComponent,
     HeaderComponent,
-    SliderComponent
+    SliderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -183,21 +183,69 @@ height:
     33rem;
     margin-bottom: rem;
   }
-.h5-mode{
-  padding-left: 55px;
-  padding-top: 60px;
+  .ism{
+padding-left: 16rem;
+  }
+
+  .form-control.ng-touched.ng-invalid {
+    border:1px solid red;
+   }
+   .form-control.ng-touched.ng-valid {
+    border:1px solid green;
+   }
+   #alin{
+     margin-top: 2rem;
+   }
+   #aline{
+    margin-top: 2rem;
+  }
+.left{
+  margin-left: 1rem;
 }
-.ps-mode{
-  padding-left: 110px;
-  margin-top: -30px;
+.lefts{
+margin-bottom: -75px;
 }
-.h6-mode{
-  padding-left: 110px;
-  padding-top: 60px;
+.models{
+  margin-bottom: -30px;
+  margin-top: 7rem;
+}
+.forms{
+  background-color: #F0F7F7;
+  border-radius: 1rem;
+  padding:2rem;
+  opacity: 0.75;
+  margin-bottom: 4rem;
 
 }
-.p-mode{
-  padding-left: 55px;
-  margin-top: -30px;
+#full{
+  background-image: url('/assets/image/Untitled-2.jpg');
+
+}
+.top{
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.icons:hover{
+  transform: scale(.8);
+}
+.icons{
+  border-radius: 6rem;
+
+}
+.parent{
+transition: all .3s ease;
+}
+.parent .last:hover{
+  background-color: #000;
+}
+.para{
+  text-decoration: underline 2px;
+  text-underline-offset: .25rem;
+}
+.btn{
+  background-color: #000;
+  text-align: center;
+  color: white;
+
 }
 

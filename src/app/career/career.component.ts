@@ -118,7 +118,7 @@ projectcount:number = 0;
 
 projectcountStop:any = setInterval(()=>{
   this.projectcount++;
-  if(this .projectcount ==287)
+  if(this .projectcount ==300)
   {
     clearInterval(this.projectcountStop)
   }
@@ -127,7 +127,7 @@ projectcountStop:any = setInterval(()=>{
 pound:number = 0;
 poundStop:any = setInterval(()=>{
   this.pound++;
-  if(this .pound ==287)
+  if(this .pound ==97)
   {
     clearInterval(this.poundStop)
   }
@@ -136,10 +136,12 @@ poundStop:any = setInterval(()=>{
 projectcounts:number = 0;
 projectcountsStop:any = setInterval(()=>{
   this.projectcounts++;
-  if(this .projectcounts ==287)
+  if(this .projectcounts ==300)
   {
     clearInterval(this.projectcountsStop)
   }
 },10)
+
+
 }
 
