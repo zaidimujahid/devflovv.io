@@ -1,5 +1,5 @@
 <!--banner image buttons point  -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators justify-content-around flex-wrap" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
       aria-current="true" aria-label="Slide 1"></button>
@@ -10,19 +10,19 @@
   </div>
 
   <!--banner image slider point start  -->
-  <div class="init">
-    <div class="carousel-inner" style="width: 100%;">
-      <div class="carousel-item active">
-        <img src="/assets/image/b-01.jpg" width="100%" height="100%">
+  <div class="init justify-content-around flex-wrap">
+    <div class="carousel-inner justify-content-around flex-wrap" style="width: 100%;">
+      <div class="carousel-item active justify-content-around flex-wrap">
+        <img src="/assets/image/b-01.jpg" width="100%">
       </div>
-      <div class="carousel-item">
-        <img src="/assets/image/b-02.jpg" width="100%" height="100%">
+      <div class="carousel-item justify-content-around flex-wrap">
+        <img src="/assets/image/b-02.jpg" width="100%" >
       </div>
-      <div class="carousel-item">
-        <img src="/assets/image/b-03.jpg" width="100%" height="100%">
+      <div class="carousel-item justify-content-around flex-wrap">
+        <img src="/assets/image/b-03.jpg" width="100%" >
       </div>
-      <div class="carousel-item">
-        <img src="/assets/image/b-2-01-01-01.jpg" width="100%" height="100%">
+      <div class="carousel-item justify-content-around flex-wrap">
+        <img src="/assets/image/b-2-01-01-01.jpg" width="100%" >
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -42,10 +42,10 @@
 
 
 <!--this is section one content start  -->
-<div class="text-center my-5">
+<div class="text-center justify-content-around flex-wrap my-5">
   <h3 class="h3-1">Software <span>Consulting &<br>
       Development Services...</span></h3>
-  <p>...with the perfect blend of technology, expertise and innovation.</p>
+  <p class="justify-content-around flex-wrap text-center">...with the perfect blend of technology, expertise and innovation.</p>
 </div>
 <!--this is section one content End  -->
 
@@ -54,34 +54,34 @@
 
 
 <!--this is clickshow blocks section start  -->
-<div id="container">
-  <div class="d-flex justify-content-around flex-wrap" style="width: 100%">
+<div id="container-fluid justify-content-around flex-wrap">
+  <div class=" dev d-flex justify-content-around flex-wrap" style="width: 100%">
     <div class="col-md-6 col-12 d-flex align-items-center justify-content-center p-0" style="height: 33rem;">
-      <div class="d-flex flex-column">
-        <div class="d-flex flex-wrap mb-3">
-          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2 "
-            (click)="toggleCard('UIUX')" data-name="p-1">
+      <div class="d-flex  flex-column  justify-content-around flex-wrap" >
+        <div class="d-flex flex-wrap mb-3 justify-content-around flex-wrap">
+          <div class="product d-flex flex-column justify-content-around  pointer-cursor mx-1 "
+            (click)="toggleCard('UIUX')" data-name="p-1" >
             <div class="text-center mb-3">
-              <img src="/assets/image/ux-design (1).png" style="width: 40px;">
+              <img src="/assets/image/ux-design (1).png" style="width: 2.5em">
             </div>
             <div class="text-center">
               <h6>UI/UX Design</h6>
             </div>
           </div>
-          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          <div class="product d-flex flex-column justify-content-center  pointer-cursor mx-1"
           (click)="toggleCard('testing')"data-name="p-1">
             <div class="text-center mb-3">
-              <img src="/assets/image/app-testing (1).png" style="width: 40px;">
+              <img src="/assets/image/app-testing (1).png" style="width: 2.5em">
             </div>
 
             <div class="text-center" >
               <h6>Software Testing Consulting</h6>
             </div>
           </div>
-          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('blockchain')" data-name="p-1">
             <div class="text-center mb-3">
-              <img src="/assets/image/block-chain (1).png" style="width: 40px;">
+              <img src="/assets/image/block-chain (1).png" style="width: 2.5em">
             </div>
             <div class="text-center">
               <h6>BlockChain Development</h6>
@@ -89,28 +89,28 @@
           </div>
         </div>
         <div class="d-flex mb-2">
-          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('mobile')" data-name="p-1">
             <div class="text-center mb-3">
-              <img src="/assets/image/mobile-app (3).png" style="width: 40px;">
+              <img src="/assets/image/mobile-app (3).png" style="width: 2.5em">
             </div>
             <div class="text-center">
               <h6>Mobile App Development</h6>
             </div>
           </div>
-          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('web')" data-name="p-1">
             <div class="text-center mb-3">
-              <img src="/assets/image/web-designing (4).png" style="width: 40px;">
+              <img src="/assets/image/web-designing (4).png" style="width: 2.5em">
             </div>
             <div class="text-center">
               <h6>Web Design & development</h6>
             </div>
           </div>
-          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-2"
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('IoT')" data-name="p-1">
             <div class="text-center mb-3">
-              <img src="/assets/image/app-development.png" style="width: 40px;">
+              <img src="/assets/image/app-development.png" style="width: 2.5em">
             </div>
             <div class="text-center">
               <h6>Iot App Development</h6>
@@ -121,74 +121,73 @@
 
 
     </div>
-    <div class="d-flex col-md-6 col-12" style="margin-top: 6em;">
+    <div class="d-flex col-md-6 col-12 d-flex justify-content-around flex-wrap" style="margin-top: 6em;">
       <div *ngIf="isUxui">
         <h6>UI/UX Design</h6>
         <p>Award-winning UI/UX consultation and development services to design software products that win the hearts of
           your customers.</p>
-        <img src="/assets/image/adobe-illustrator.png" class="center2">
-        <img src="/assets/image/adobe-premiere-pro.png" class="center2">
-        <img src="/assets/image/figma (1).png" class="center2">
-        <img src="/assets/image/adobe-photoshop.png" class="center2"><br>
-        <button class="btn btn-dark">Learn More</button>
+        <img src="/assets/image/adobe-illustrator.png" >
+        <img src="/assets/image/adobe-premiere-pro.png" class="ml-2">
+        <img src="/assets/image/figma (1).png" >
+        <img src="/assets/image/adobe-photoshop.png" ><br>
+        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isTesting">
         <h6>Software Testing Consulting</h6>
         <p>In-depth software QA testing and consultation to develop bug-free software products and meet quality
           standards.</p>
-        <img src="/assets/image/postman.png" class="center2">
-        <img src="/assets/image/jira.png" class="center2">
+        <img src="/assets/image/postman.png" >
+        <img src="/assets/image/jira.png" class="ml-2">
         <br>
-        <button class="btn btn-dark">Learn More</button>
+        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isChain">
         <h6>Blockchain Development</h6>
         <p>Wide range of reliable and tailored blockchain software application development services at your disposal.
         </p>
-        <img src="/assets/image/ethereum.png" class="center2">
-        <img src="/assets/image/mobile-app.png" class="center2">
-        <img src="/assets/image/mobile-app.png" class="center2"><br>
-        <button class="btn btn-dark">Learn More</button>
+        <img src="/assets/image/ethereum.png" >
+        <img src="/assets/image/mobile-app.png" class="ml-2">
+        <img src="/assets/image/mobile-app.png" class="ml-2"><br>
+        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isMobile">
         <h6>Mobile App Development</h6>
         <p>Consultation on updating existing mobile applications and development of apps that look and perform great on
           both iOS and Android.</p>
-        <img src="/assets/image/object.png" class="center2">
-        <img src="/assets/image/swift.png" class="center2">
-        <img src="/assets/image/kotlin.png" class="center2">
-        <img src="/assets/image/mobile-app.png" class="center2"><br>
-        <button class="btn btn-dark">Learn More</button>
+        <img src="/assets/image/object.png" >
+        <img src="/assets/image/swift.png" class="ml-2">
+        <img src="/assets/image/kotlin.png" class="ml-2">
+        <img src="/assets/image/mobile-app.png" class="ml-2"><br>
+        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isWeb">
         <h6>Web Design & Development</h6>
         <p>Scalable web product development at any stage and ongoing support after launch.</p>
-        <img src="/assets/image/mongodb.png" class="center2">
-        <img src="/assets/image/magento.png" class="center2">
-        <img src="/assets/image/node-js.png" class="center2"><br>
-        <button class="btn btn-dark">Learn More</button>
+        <img src="/assets/image/mongodb.png" >
+        <img src="/assets/image/magento.png" class="ml-2">
+        <img src="/assets/image/node-js.png" class="ml-2"><br>
+        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isIot">
         <h6>IoT App Development</h6>
         <p>Proficient IoT app developers to build world-class, scalable, and future-ready IoT applications</p>
-        <img src="/assets/image/arduino.png" class="center2">
-        <img src="/assets/image/openshift.png" class="center2">
-        <img src="/assets/image/vessel.png" class="center2">
+        <img src="/assets/image/arduino.png" >
+        <img src="/assets/image/openshift.png"class="ml-2">
+        <img src="/assets/image/vessel.png" class="ml-2">
         <br>
-        <button class="btn btn-dark">Learn More</button>
+        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
     </div>
   </div>
 </div>
 <!--this is magic box End  -->
-<div class="container-two">
-  <h3 class="h3-2"><span>Industries</span> in Focus</h3>
-  <ul class="carousel-imagetext ">
-    <li><a>E-Commerce</a></li>
+<div class="col-md-6 col-md-12 my-5 text-center d-flex justify-content-around flex-wrap">
+  <h3 class="have"><span>Industries</span> in Focus</h3>
+  <ul class="carousel-imagetext col-md-12 justify-content-center d-flex flex-wrap ">
+    <li ><a>E-Commerce</a></li>
     <li><a>Fintech</a></li>
     <li><a>Travel & Tourim</a></li>
     <li><a>On-Demand Services</a></li>
-
   </ul>
 </div>
 
@@ -199,8 +198,8 @@
 
 <!--this is grid slider  section start-->
 
-<div class="partners">
-  <div class="container-s">
+<div class="partners d-flex justify-content-around flex-wrap">
+  <div class="container-s justify-content-around flex-wrap">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
         <img src="/assets/image/8-01-01.png" class="timg">
@@ -222,7 +221,7 @@
   <!--this is grid slider  section end-->
 
   <!--this is grid slider text section start-->
-  <div class="container">
+  <div class="container justify-content-around flex-wrap">
     <div class="col-xs-6">
       <p class="paragraph my-5">Our team of expert software consultants and engineers will analyze your current situation and
         develop an eCommerce platform that meets all of your needs. We will work with you using the right tools to build
@@ -234,22 +233,23 @@
 
 
   <!--this is2nd banner slider section start-->
-
+<div class=" justify-content-around flex-wrap">
   <owl-carousel-o [options]="bannerSlider">
     <ng-template carouselSlide>
-      <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+      <img src="/assets/image/Untitled-1-01 (2).png">
     </ng-template>
     <ng-template carouselSlide>
-      <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+      <img src="/assets/image/Untitled-1-01 (2).png">
     </ng-template>
     <ng-template carouselSlide>
-      <img src="/assets/image/Untitled-1-01 (2).png" class="banner-4">
+      <img src="/assets/image/Untitled-1-01 (2).png" >
     </ng-template>
   </owl-carousel-o>
+</div>
   <!--this is 2nd banner slider section end-->
 
   <!--this is text with image start-->
-  <div class="container-fluid" height="33rem">
+  <div class="container-fluid justify-content-around flex-wrap " height="33rem">
     <div class=" model d-flex my-5  justify-content-around flex-wrap">
       <div class="line">
         <div class="container">
@@ -291,17 +291,17 @@
 
         </div>
           </div>
-    <div class="model-2 d-flex col-md-4 col-12">
-      <div  class="line-2 my-1">
+    <div class="model-2 col-md-4 col-12 justify-content-right flex-wrap">
+      <div  class="line-2 justify-content-right flex-wrap my-1">
         <h4><span>Engagement</span> Models</h4>
         <p>We solve your biggest business pains and help you succeed.
           Here is how we can work together</p>
-          <div class="text-center">
-            <img src="/assets/image/78-01.png" width="400px">
+          <div class="text-center col-md-12 justify-content-around flex-wrap">
+            <img src="/assets/image/78-01.png" width="100%">
           </div>
       </div>
     </div>
-    <div class="container pb-5">
+    <div class="container justify-content-around flex-wrap pb-5">
       <div class="row">
         <div class="col text-center">
           <button class="btn btn-dark">View Pricing</button>
@@ -314,8 +314,8 @@
   <!--this is text with image End-->
 
   <!--this is 2nd banner section start-->
-  <div class=" d-flex justify-content-around flex-wrap">
-  <img src="/assets/image/Untitled-1-01.jpg" class="banner-5" width="100%">
+  <div class=" justify-content-around flex-wrap">
+  <img src="/assets/image/Untitled-1-01.jpg"  width="100%">
 </div>
   <!--this is 2nd banner end-->
   <!--this is formsection start-->
@@ -345,34 +345,36 @@
         <div class="client-count-wrp mt-100 ">
         <div clas="cards num d-flex  my-3 justify-content-around flex-wrap">
           <div class=" model-3 d-flex my-3 justify-content-around flex-wrap">
-            <div>
+            <div class="justify-content-around flex-wrap">
               <h3>{{projectcount}}+</h3>
               <p>Successful<br> projects</p>
             </div>
-            <div class="cards pl-5">
+            <div class="cards  justify-content-around flex-wrap">
               <h3>{{pound}}%</h3>
               <p>Customer <br>Satisfiion rate</p>
             </div>
-            <div  class="cards pl-5">
+            <div  class="cards justify-content-around flex-wrap">
               <h3>{{pound}}+</h3>
               <p>develpors &<br> enginers</p>
             </div>
       </div>
         </div>
-        <div class="parent">
-          <div class="container">
-<div class="row">
-  <div class="col-md-2">
-<img src="/assets/image/baggege.png" class=".last">
+
+
+        <div class="parent justify-content-around flex-wrap ">
+          <div class="container justify-content-around flex-wrap  ">
+<div class="row justify-content-around flex-wrap d-flex justify-content-around ">
+  <div class="col-md-2  justify-content-around flex-wrap d-inline-block ">
+<img src="/assets/image/baggege.png">
   </div>
-  <div class="col-md-2 ml-3">
-    <img src="/assets/image/baggege.png" class=".last">
+  <div class="col-md-2  ml-3 justify-content-around flex-wrap  ">
+    <img src="/assets/image/baggege.png">
   </div>
-   <div class="col-md-2  ml-3">
-    <img src="/assets/image/baggege.png" class=".last">
+   <div class="col-md-2  ml-3 justify-content-around flex-wrap ">
+    <img src="/assets/image/baggege.png" >
   </div>
-  <div class="col-md-2  ml-3">
-    <img src="/assets/image/baggege.png" class=".last">
+  <div class="col-md-2 ml-3 justify-content-around flex-wrap">
+    <img src="/assets/image/baggege.png">
   </div>
 </div>
           </div>
@@ -417,15 +419,15 @@
               <input type="email" class="form-control" id="inputEmail4" placeholder="Your Name">
             </div>
             <div class="form-group col-md-6">
-          <button type="submit" class="btn mb-5 mr-4" id="alin">save</button>
-          <button type="submit" class="btn  mb-5" id="aline">continue</button>
+          <button type="submit" class="btn mb-5 mr-4 justify-content-around flex-wrap" id="alin">save</button>
+          <button type="submit" class="btn  mb-5 justify-content-around flex-wrap" id="aline">continue</button>
             </div>
           </div>
-          <div class="d-flex  my-3 justify-content-around flex-wrap">
+          <div class="d-flex justify-content-around flex-wrap">
             <h4>
               Join Our Team
             </h4>
-            <p class="para my-1">check our open vancancies <i class="fas fa-angle-right"></i></p>
+             <p class="para my-1">check our open vancancies <i class="fas fa-angle-right"></i></p>
           </div>
         </form>
       </div>

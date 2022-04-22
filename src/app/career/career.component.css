@@ -1,3 +1,10 @@
+*::before,
+*::after {
+  box-sizing:inherit;
+}
+html{
+  box-sizing: border-box;
+}
 span{
   color: #0085FF;
 }
@@ -8,16 +15,46 @@ span{
 
 #container{
   width:100%;
-  margin: 0 auto;
   height: 33rem;
+}
+@media (min-width: 640px) {
+  #container {
+    width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  #container {
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  #container {
+    width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  #container {
+    width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  #container {
+    width: 1536px;
+  }
+}
+.dev{
   background: url(/assets/image/0-01.png);
+
 }
 .h3-1{
   font-weight: bold;
 }
-.h3-2{
+.have{
   font-weight: bold;
+
 }
+
+
 .col1{
   width:500px;
   margin-top: 7rem;
@@ -59,9 +96,7 @@ span{
   margin-left: 2.50rem;
   margin-top: 1rem;
 }
-.center2{
-  padding:1rem;
-}
+
 .design{
   text-align: center;
   margin-bottom: 1.75rem;
@@ -79,8 +114,6 @@ margin-top: 4.5rem;
 
 .carousel-imagetext{
   list-style: none;
-  display:flex;
-  justify-content: center;
 }
 li{
   padding: 1rem;
@@ -149,7 +182,6 @@ hr.solid {
 }
 .container-s{
   width: 85%;
-  margin-left:8rem;
 
 }
 
@@ -164,9 +196,7 @@ hr.solid {
   transform: scale(.95);
 
 }
-.partners{
-  margin-top: 2rem;
-}
+
 .partners .timg {
 transition: all .3s ease;
 
@@ -181,7 +211,7 @@ height:
 .banner-4{
   height:
     33rem;
-    margin-bottom: rem;
+  width:100%;
   }
   .ism{
 padding-left: 16rem;
@@ -248,4 +278,5 @@ transition: all .3s ease;
   color: white;
 
 }
+
 

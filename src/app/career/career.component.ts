@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faFilm, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -13,6 +14,8 @@ export class CareerComponent implements OnInit {
   isWeb = false;
   isMobile = false;
   isIot = false;
+  filmIcon = faFilm;
+  planeIcone = faPaperPlane
 
   toggleCard(selection: string) {
     if (selection === 'UIUX') {
@@ -58,6 +61,7 @@ export class CareerComponent implements OnInit {
         (this.isChain = false),
         (this.isWeb = false);
     }
+  
   }
 
   constructor() {}
@@ -95,16 +99,16 @@ export class CareerComponent implements OnInit {
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 500,
+    navSpeed: 400,
     responsive: {
       0: {
         items: 1
       },
       400: {
-        items: 2
+        items: 1
       },
       740: {
-        items: 3
+        items: 2
       },
       940: {
         items:3
