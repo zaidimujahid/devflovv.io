@@ -17,31 +17,7 @@ span{
   width:100%;
   height: 33rem;
 }
-@media (min-width: 640px) {
-  #container {
-    width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  #container {
-    width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  #container {
-    width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  #container {
-    width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  #container {
-    width: 1536px;
-  }
-}
+
 .dev{
   background: url(/assets/image/0-01.png);
 
@@ -72,6 +48,8 @@ span{
   padding-left: 1rem;
 
 }
+
+
 .products-container{
   margin:0;
   padding: 0;
@@ -82,8 +60,8 @@ span{
   transition:all 2s linear;
 }
 .container{
-  max-width: 800px;
-  padding: 2rm 1rm;
+  width: 100%;
+  padding: 2rem 1rem;
 }
 
 .container .products-container{
@@ -278,5 +256,3 @@ transition: all .3s ease;
   color: white;
 
 }
-
-

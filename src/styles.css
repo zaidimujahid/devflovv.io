@@ -14,14 +14,15 @@ body
   border-radius: .75rem;
   padding: 1em;
   width: 9em;
+  display: flex;
   aspect-ratio: 1;
 }
 .product:hover{
   background-color: #3b4c61;
   color: #f2f9f9;
   transform: scale(.9);
-
 }
+
 
 .pointer-cursor {
   cursor: pointer;
@@ -34,5 +35,5 @@ height: 10px;
 border-radius: 50px;
 }
 .col{
-  
+
 }
