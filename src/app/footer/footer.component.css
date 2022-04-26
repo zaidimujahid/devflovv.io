@@ -55,12 +55,12 @@ hr.solid {
   color: rgb(0, 183, 255);
 
 }
-.navbar-nav > li > a::after {
-  content: "|";
-  padding: 0 5px
-}
+
 .rel{
   margin-top: 3rem;
   margin-bottom: 3rem;
   margin-right: 20rem;
+}
+.img{
+  width:180px;
 }

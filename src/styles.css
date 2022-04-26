@@ -13,10 +13,31 @@ body
   box-shadow: 0.5rem,1rem;
   border-radius: .75rem;
   padding: 1em;
-  width: 9em;
+  width:9em;
   display: flex;
   aspect-ratio: 1;
 }
+@media screen and (max-width: 600px) {
+.product p {
+  display: none;
+}
+}
+@media screen and (max-width: 600px) {
+  .product  {
+    width:4rem
+  }
+  }
+  @media screen and (max-width: 850px) {
+    .boxone  {
+      margin-left: 1rem;
+    }
+    }
+    @media screen and (max-width: 300px) {
+      .partners  {
+text-align: center;
+      }
+      }
+
 .product:hover{
   background-color: #3b4c61;
   color: #f2f9f9;
@@ -33,7 +54,18 @@ background-color: rgb(0, 0, 0);
 width: 10px;
 height: 10px;
 border-radius: 50px;
+justify-content: center;
 }
-.col{
 
+.first{
+  display: inline-block;
+  width:33.33%;
+  text-align: center;
+}
+.second{
+  display: table;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: none;
 }

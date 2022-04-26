@@ -54,59 +54,58 @@
 
 
 <!--this is clickshow blocks section start  -->
-
-
 <div id="container-fluid justify-content-around flex-wrap">
-  <div class=" dev d-flex justify-content-around flex-wrap" style="width: 100%">
-    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center p-0" style="height: 33rem;">
+  <div class=" dev d-flex justify-content-around flex-wrap " style="width: 100%">
+    <div class="owner col-md-6 d-flex align-items-center justify-content-center my-5 ">
       <div class="d-flex  flex-column  justify-content-around flex-wrap" >
-        <div class="d-flex flex-wrap mb-3 justify-content-around flex-wrap">
-          <div class="product d-flex flex-column justify-content-around  pointer-cursor mx-1 "
+        <div class="d-flex flex-wrap mb-2 justify-content-around flex-wrap">
+          <div class="product d-flex flex-column justify-content-around  pointer-cursor  "
             (click)="toggleCard('UIUX')" data-name="p-1" >
-            <div class="text-center col-12 mb-3">
-              <img src="/assets/image/ux-design (1).png" >
+            <div class="text-center">
+              <img src="/assets/image/ux-design (1).png">
             </div>
             <div class="text-center">
-              <h6>UI/UX Design</h6>
+              <p>UI/UX Design</p>
             </div>
           </div>
-          <div class="product d-flex  flex-column justify-content-center  pointer-cursor mx-1"
+
+          <div class="product d-flex flex-column justify-content-center  pointer-cursor mx-1"
           (click)="toggleCard('testing')"data-name="p-1">
             <div class="text-center mb-3">
               <img src="/assets/image/app-testing (1).png" >
             </div>
 
             <div class="text-center" >
-              <h6>Software Testing Consulting</h6>
+              <p>Software Testing Consulting</p>
             </div>
           </div>
-          <div class="product d-flex  flex-column justify-content-center pointer-cursor mx-1"
+          <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('blockchain')" data-name="p-1">
             <div class="text-center mb-3">
               <img src="/assets/image/block-chain (1).png" >
             </div>
             <div class="text-center">
-              <h6>BlockChain Development</h6>
+              <p>BlockChain Development</p>
             </div>
           </div>
         </div>
-        <div class="d-flex  mb-2">
+        <div class="d-flex mb-2">
           <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('mobile')" data-name="p-1">
             <div class="text-center mb-3">
               <img src="/assets/image/mobile-app (3).png" >
             </div>
             <div class="text-center">
-              <h6>Mobile App Development</h6>
+              <p>Mobile App Development</p>
             </div>
           </div>
           <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
           (click)="toggleCard('web')" data-name="p-1">
             <div class="text-center mb-3">
-              <img src="/assets/image/web-designing (4).png" >
+              <img src="/assets/image/web-designing (4).png">
             </div>
             <div class="text-center">
-              <h6>Web Design & development</h6>
+              <p>Web Design & development</p>
             </div>
           </div>
           <div class="product d-flex flex-column justify-content-center pointer-cursor mx-1"
@@ -115,7 +114,7 @@
               <img src="/assets/image/app-development.png" >
             </div>
             <div class="text-center">
-              <h6>Iot App Development</h6>
+              <p>Iot App Development</p>
             </div>
           </div>
         </div>
@@ -123,7 +122,7 @@
 
 
     </div>
-    <div class="d-flex col-md-6 col-12 d-flex justify-content-around flex-wrap" style="margin-top: 6em;">
+    <div class="boxone box d-flex col-md-6 col-12  d-flex justify-content-around flex-wrap my-5" >
       <div *ngIf="isUxui">
         <h6>UI/UX Design</h6>
         <p>Award-winning UI/UX consultation and development services to design software products that win the hearts of
@@ -132,7 +131,6 @@
         <img src="/assets/image/adobe-premiere-pro.png" class="ml-2">
         <img src="/assets/image/figma (1).png" >
         <img src="/assets/image/adobe-photoshop.png" ><br>
-        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isTesting">
         <h6>Software Testing Consulting</h6>
@@ -141,16 +139,13 @@
         <img src="/assets/image/postman.png" >
         <img src="/assets/image/jira.png" class="ml-2">
         <br>
-        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isChain">
         <h6>Blockchain Development</h6>
         <p>Wide range of reliable and tailored blockchain software application development services at your disposal.
         </p>
         <img src="/assets/image/ethereum.png" >
-        <img src="/assets/image/mobile-app.png" class="ml-2">
-        <img src="/assets/image/mobile-app.png" class="ml-2"><br>
-        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
+
       </div>
       <div *ngIf="isMobile">
         <h6>Mobile App Development</h6>
@@ -159,8 +154,6 @@
         <img src="/assets/image/object.png" >
         <img src="/assets/image/swift.png" class="ml-2">
         <img src="/assets/image/kotlin.png" class="ml-2">
-        <img src="/assets/image/mobile-app.png" class="ml-2"><br>
-        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isWeb">
         <h6>Web Design & Development</h6>
@@ -168,7 +161,6 @@
         <img src="/assets/image/mongodb.png" >
         <img src="/assets/image/magento.png" class="ml-2">
         <img src="/assets/image/node-js.png" class="ml-2"><br>
-        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
       <div *ngIf="isIot">
         <h6>IoT App Development</h6>
@@ -177,12 +169,10 @@
         <img src="/assets/image/openshift.png"class="ml-2">
         <img src="/assets/image/vessel.png" class="ml-2">
         <br>
-        <button class="btn btn-dark mb-4 my-2 justify-content-center flex-wrap">Learn More</button>
       </div>
     </div>
   </div>
 </div>
-
 <!--this is magic box End  -->
 <div class="col-md-6 col-md-12 my-3 text-center d-flex justify-content-around flex-wrap">
   <h3 class="have"><span>Industries</span> in Focus</h3>
@@ -191,6 +181,7 @@
     <li><a>Fintech</a></li>
     <li><a>Travel & Tourim</a></li>
     <li><a>On-Demand Services</a></li>
+
   </ul>
 </div>
 
@@ -198,8 +189,9 @@
 
 <!--this is grid slider  section start-->
 
-<div class="partners d-flex justify-content-around flex-wrap">
-  <div class="container-s justify-content-around flex-wrap">
+<div class="partners d-flex justify-content-around flex-wrap text-center">
+  <div class="container justify-content-around flex-wrap " id="self">
+    <div class="ending">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
         <img src="/assets/image/8-01-01.png" class="timg">
@@ -208,12 +200,13 @@
         <img src="/assets/image/9-01-01.png" class="timg">
       </ng-template>
         <ng-template carouselSlide>
-          <img src="/assets/image/Ecommerce-web-page-amico.png" class="timg">
+          <img src="/assets/image/e-comerece.png" class="timg">
         </ng-template>
       <ng-template carouselSlide>
-        <img src="/assets/image/adobe-illustrator.png" class="timg">
+        <img src="/assets/image/399746-PD2Z5F-119-01-02.png" class="timg">
       </ng-template>
     </owl-carousel-o>
+    </div>
 
 
 </div>
@@ -221,9 +214,9 @@
   <!--this is grid slider  section end-->
 
   <!--this is grid slider text section start-->
-  <div class="container justify-content-around flex-wrap">
-    <div class="col-xs-6">
-      <p class="paragraph my-5">Our team of expert software consultants and engineers will analyze your current situation and
+  <div class="container col-md-6 my-3 justify-content-center flex-wrap">
+    <div class="text ">
+      <p class="paragraph col-md-12 my-3">Our team of expert software consultants and engineers will analyze your current situation and
         develop an eCommerce platform that meets all of your needs. We will work with you using the right tools to build
         an online store that captures more sales and helps you grow faster than ever before.</p>
     </div>
@@ -233,7 +226,7 @@
 
 
   <!--this is2nd banner slider section start-->
-<div class=" justify-content-around flex-wrap">
+<div class="justify-content-around flex-wrap">
   <owl-carousel-o [options]="bannerSlider">
     <ng-template carouselSlide>
       <img src="/assets/image/Untitled-1-01 (2).png">
@@ -242,7 +235,7 @@
       <img src="/assets/image/Untitled-1-01 (2).png">
     </ng-template>
     <ng-template carouselSlide>
-      <img src="/assets/image/Untitled-1-01 (2).png" >
+      <img src="/assets/image/Untitled-1-01 (2).png">
     </ng-template>
   </owl-carousel-o>
 </div>
@@ -279,7 +272,7 @@
               <p>Our staff augmentation model is intended to help companies find the right skills for their project.</p>
               </div>
               <div class=" justify-content-center pointer-cursor">
-                <img src="/assets/image/person-with-laptop-male.png" class="icons">
+                <img src="/assets/image/person-with-laptop-male.png" class="icons justify-content-around flex-wrap">
                 </div>
                 <div >
                   <h6><span>Dedicated</span> Development Team</h6>
@@ -291,16 +284,17 @@
 
         </div>
           </div>
-    <div class="model-2 d-flex col-md-6">
+    <div class="model-2 d-flex col-md-6 justify-content-around flex-wrap">
       <div  class="line-2 my-1">
         <h4><span>Engagement</span> Models</h4>
         <p>We solve your biggest business pains and help you succeed.
           Here is how we can work together</p>
           <div class="text-center">
-            <img src="/assets/image/78-01.png" width="400px">
+            <img src="/assets/image/78-01.png" width="80%">
           </div>
       </div>
     </div>
+    <!--
     <div class="container pb-5">
       <div class="row">
         <div class="col text-center">
@@ -308,6 +302,8 @@
         </div>
       </div>
     </div>
+      -->
+
   </div>
 </div>
 
@@ -316,78 +312,44 @@
 
   <!--this is text with image End-->
 
-  <!--this is 2nd banner section start-->
-  <div class=" justify-content-around flex-wrap">
-  <img src="/assets/image/Untitled-1-01.jpg"  width="100%">
-</div>
-  <!--this is 2nd banner end-->
+
   <!--this is formsection start-->
   <div class="container-fluid" id="full">
     <div class=" d-flex justify-content-around flex-wrap">
-      <div class="top">
-      <h3>Let Us Know What You’re Looking for,<br>
-       <span>We’ll Build it for You</span></h3>
+      <div class="top text-center justify-content-around flex-wrap col-12">
+      <h3>Let Us Know What You’re Looking for,</h3>
+       <h3 class="blue col-12"><span>We’ll Build it for You</span></h3>
       </div>
       </div>
     <div class=" form-out d-flex justify-content-around flex-wrap">
       <div class="my-5">
         <h4>Talk to our Sales Team</h4>
-        <div class=" model-3 d-flex my-5 justify-content-around flex-wrap">
-          <div>
-          <img src="/assets/image/swift.png" >
-          </div>
-          <div class="pr-5 mr-5 justify-content-around flex-wrap">
-            <h5>Name</h5>
-            <p>Head of sale</p>
-            <img src="/assets/image/whatsapp (1).png" class="social pr-2">
-            <img src="/assets/image/twitter.png" class="social pr-2">
-            <img src="/assets/image/facebook-logo-2019.png" class="social pr-2">
-            <img src="/assets/image/instagram.png" class="social pr-2"><br>
-          </div>
-        </div>
         <div class="client-count-wrp mt-100 ">
         <div clas="cards num d-flex  my-3 justify-content-around flex-wrap">
-          <div class=" model-3 d-flex my-3 justify-content-around flex-wrap">
-            <div class="justify-content-around flex-wrap">
-              <h3>{{projectcount}}+</h3>
-              <p>Successful<br> projects</p>
+          <div class=" model-3  d-flex my-4 justify-content-aroud flex-wrap">
+            <div class=" justify-content-around flex-wrap m-2">
+              <h4>{{projectcount}}+</h4>
+              <h6>Successful<br> projects</h6>
             </div>
-            <div class="cards  justify-content-around flex-wrap">
-              <h3>{{pound}}%</h3>
-              <p>Customer <br>Satisfiion rate</p>
+            <div class="cards  justify-content-around flex-wrap m-2">
+              <h4>{{pound}}%</h4>
+              <h6>Customer <br>Satisfiion rate</h6>
             </div>
-            <div  class="cards justify-content-around flex-wrap">
-              <h3>{{pound}}+</h3>
-              <p>develpors &<br> enginers</p>
+            <div  class="cards justify-content-around flex-wrap m-2">
+              <h4>{{pound}}+</h4>
+              <h6>develpors &<br> enginers</h6>
             </div>
       </div>
         </div>
 
 
-        <div class="parent justify-content-around flex-wrap ">
-          <div class="container col-12 justify-content-around flex-wrap  ">
-<div class="row justify-content-around flex-wrap  d-flex justify-content-around ">
-  <div class="col-md-2   justify-content-around flex-wrap d-inline-block ">
-<img src="/assets/image/29092-5-reebok-logo-photos.png" width="70rem">
-  </div>
-  <div class="col-md-2  ml-3 justify-content-around flex-wrap  ">
-    <img src="/assets/image/29092-5-reebok-logo-photos.png" width="70rem">
-  </div>
-   <div class="col-md-2  ml-3 justify-content-around flex-wrap ">
-    <img src="/assets/image/29092-5-reebok-logo-photos.png" width="70rem">
-  </div>
-  <div class="col-md-2  ml-3 justify-content-around flex-wrap">
-    <img src="/assets/image/29092-5-reebok-logo-photos.png" width="70rem">
-  </div>
-</div>
-          </div>
-        </div>
+
       </div>
   </div>
-    <div class="form-in d-flex col-md-5 col-12">
+    <div class="form-in d-flex col-md-5 col-12 justify-content-around flex-wrap">
       <div>
         <p>We are passionate about delivering great software and services.</p>
-  <div class="forms">
+  <div class="forms justify-content-around flex-wrap">
         <form class=" justify-content-around flex-wrap">
           <div class="form-row">
             <div class="form-group col-md-6">

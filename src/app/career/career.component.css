@@ -12,7 +12,9 @@ span{
   width:1400px;
   height:600px;
 }
+.model-3{
 
+}
 #container{
   width:100%;
   height: 33rem;
@@ -63,7 +65,12 @@ span{
   width: 100%;
   padding: 2rem 1rem;
 }
-
+.text{
+  text-align: center;
+}
+.blue{
+  text-align: center;
+}
 .container .products-container{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(7rem,1fr));
@@ -175,6 +182,19 @@ hr.solid {
 
 }
 
+.partners{
+  margin: 3rem;
+}
+@media screen and (max-width: 300px) {
+  .partners {
+   justify-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #self {
+    text-align: center;
+  }
+}
 .partners .timg {
 transition: all .3s ease;
 
@@ -255,4 +275,27 @@ transition: all .3s ease;
   text-align: center;
   color: white;
 
+}
+.left{
+  display:inline-block;
+  width:33.33%;
+  text-align: center;
+}
+.inner{
+  background-color: #f2f9f9;
+  box-shadow: 0.5rem,1rem;
+  border-radius: .75rem;
+  padding: 1rem;
+  display: table;
+  width:100%;
+  position: relative;
+  float: none;
+}
+.inner:hover{
+  background-color: #3b4c61;
+  color: #f2f9f9;
+  transform: scale(.9);
+}
+h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

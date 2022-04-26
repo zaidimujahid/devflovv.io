@@ -61,7 +61,7 @@ export class CareerComponent implements OnInit {
         (this.isChain = false),
         (this.isWeb = false);
     }
-  
+
   }
 
   constructor() {}
@@ -93,13 +93,14 @@ export class CareerComponent implements OnInit {
     },
     nav: false
   }
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
-    pullDrag: true,
+    pullDrag: false,
     dots: false,
-    navSpeed: 400,
+    navSpeed: 300,
     responsive: {
       0: {
         items: 1
@@ -107,15 +108,21 @@ export class CareerComponent implements OnInit {
       400: {
         items: 1
       },
-      740: {
+      430: {
         items: 2
+      },
+      500: {
+        items: 2
+      },
+      740: {
+        items: 2,
       },
       940: {
         items:3
       }
     },
     nav: true,
-    navText: ['<i class="fa fa-caret-left"</i>', '<i class="fa fa-caret-right"</i>'],
+    navText: ['', ''],
 
   }
 projectcount:number = 0;
