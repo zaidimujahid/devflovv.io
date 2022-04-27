@@ -1,44 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.google.com/specimen/Montserrat?query=Montserrat+&preview.size=24');
 
-body
-{
+body {
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   box-sizing: border-box;
+}
+
+h3 {
+  font-family: url(../assets/fonts/MyriadPro-Regular_0.otf);
+}
+p{
+  font-family: url(../assets/fonts/Montserrat-Light.ttf);
 }
 
 .product {
   background-color: #f2f9f9;
-  box-shadow: 0.5rem,1rem;
+  box-shadow: 0.5rem, 1rem;
   border-radius: .75rem;
   padding: 1em;
-  width:9em;
+  width: 9em;
   display: flex;
   aspect-ratio: 1;
 }
-@media screen and (max-width: 600px) {
-.product p {
-  display: none;
-}
-}
-@media screen and (max-width: 600px) {
-  .product  {
-    width:4rem
-  }
-  }
-  @media screen and (max-width: 850px) {
-    .boxone  {
-      margin-left: 1rem;
-    }
-    }
-    @media screen and (max-width: 300px) {
-      .partners  {
-text-align: center;
-      }
-      }
 
-.product:hover{
+@media screen and (max-width: 600px) {
+  .product p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    width: 4rem
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .partners {
+    text-align: center;
+  }
+}
+
+.product:hover {
   background-color: #3b4c61;
   color: #f2f9f9;
   transform: scale(.9);
@@ -50,19 +54,20 @@ text-align: center;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
-background-color: rgb(0, 0, 0);
-width: 10px;
-height: 10px;
-border-radius: 50px;
-justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  justify-content: center;
 }
 
-.first{
+.first {
   display: inline-block;
-  width:33.33%;
+  width: 33.33%;
   text-align: center;
 }
-.second{
+
+.second {
   display: table;
   width: 100%;
   text-align: center;
