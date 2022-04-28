@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CompanyComponent } from './company/company.component';
 import { CareerComponent } from './career/career.component';
+import { ServiceComponent } from './service/service.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 @NgModule({
@@ -19,7 +22,8 @@ import { CareerComponent } from './career/career.component';
     SliderComponent,
     FooterComponent,
     CompanyComponent,
-    CareerComponent
+    CareerComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,7 @@ import { CareerComponent } from './career/career.component';
     CarouselModule,
     NgbModule,
     FontAwesomeModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

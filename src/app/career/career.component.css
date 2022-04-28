@@ -2,7 +2,7 @@
   border:1px solid black;
 }
 span{
-  color: blue;
+  color: #0085FF;
 }
 hr.solid {
   border-top: 1px solid #bbb;
@@ -13,7 +13,7 @@ hr.solid {
   overflow-y: auto;
 }
 .full{
-  background-color: rgb(223, 223, 223);
+  background-color: rgba(223, 223, 223, 0.274);
 }
 .select2-container .select2-selection--single{
   height:34px !important;
@@ -23,9 +23,7 @@ hr.solid {
    border-radius: 0px !important;
 }
 .column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 23%;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -42,7 +40,6 @@ hr.solid {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
-  text-align: center;
   background-color: #f1f1f1;
 }
 
@@ -56,4 +53,42 @@ hr.solid {
 }
 .card:hover{
   background-color: rgb(240, 10, 86);
+}
+.cardtwo{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+.cardtwo:hover{
+  background-color: rgb(10, 240, 240);
+}
+.cardfour{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+.cardfour:hover{
+  background-color: rgb(10, 83, 240);
+}
+.cardfive{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+.cardfive:hover{
+  background-color: rgb(240, 205, 10);
+}
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+.cards:hover{
+  background-color: rgb(205, 240, 10);
+}
+button{
+  border-radius: 4rem;
+}
+.protect{
+  background-color: #bbb;
 }
